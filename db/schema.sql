@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS tv_blog;
+
+CREATE DATABASE tv_blog;
