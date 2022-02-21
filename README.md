@@ -30,6 +30,6 @@ https://obscure-tv.herokuapp.com/
 • Shin Miyakawa
 • William Ingram
 • Timi Lott
-• Nikhil Makhija
+• Nikhil Makhij
  
  
