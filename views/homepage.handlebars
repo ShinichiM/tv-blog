@@ -1,11 +1,181 @@
+<div class="timeline-wrapper clearfix">
+    <div class="timeline-content-day">
+        <div class="timeline-line"></div>
+        <div class="timeline-content-item active" data-timeline="hour-8">
+            <span>8 AM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-9">
+            <span>9 AM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-10">
+            <span>10 AM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-11">
+            <span>11 AM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-12">
+            <span>12 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-13">
+            <span>1 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-14">
+            <span>2 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-15">
+            <span>3 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-16">
+            <span>4 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-17">
+            <span>5 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-18">
+            <span>6 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-19">
+            <span>7 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-20">
+            <span>8 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-21">
+            <span>9 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-22">
+            <span>10 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="timeline-content-item" data-timeline="hour-23">
+            <span>11 PM</span>
+            <div class="timeline-content-item-reveal">
+                <a href="#">
+                    <img src="https://picsum.photos/g/300/300">
+                    <span>Lorem Ipsum</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {{#each serializedQuery}}
   <div class="container">
-    <div class="post mx-auto mt-3 card-body border rounded col-12">
+    <div
+      class="post mx-auto mt-3 card-body border col-12 shadow-lg p-3 mb-5 bg-white rounded"
+    >
       <blockquote class="blockquote mb-0">
         <cite title="tv-brand">{{this.brand}}</cite>
         <div class="d-flex flex-row justify-content-between">
+          {{! <div class="d-flex flex-row sm:flex-column"> }}
           <p>{{this.price}}</p>
-          <p>{{this.comment}}</p>
+          <p class="mx-3">{{this.comment}}</p>
+          {{! </div> }}
           <img
             data-ils="2"
             jsaction="rcuQ6b:trigger.M8vzZb;"

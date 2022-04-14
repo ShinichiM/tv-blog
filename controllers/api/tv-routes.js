@@ -53,8 +53,4 @@ router.get("/tv/:id", (req, params) => {
         });
 });
 
-// UPDATE tv by id '/:id', router.put('/:id', (req, params) => {  })
-
-// DELETE tv by id '/:id', router.delete(':/id', (req, params) => {  })
-
 module.exports = router;

@@ -15,40 +15,12 @@ router.get("/", (req, res) => {
     .then((query) => {
       console.log(User.username)
       const serializedQuery = query.map((query) => query.get({ plain: true }));
-      console.log(
-        "-------------------------------------",
-        serializedQuery,
-        "-------------------------------------"
-      );
       res.render("homepage", {
         loggedIn: req.session.loggedIn,
         serializedQuery,
       });
     })
     .catch((err) => {
-      res.status(500).json(err);
-    });
-});
-
-router.get("/tv", (req, res) => {
-  Tv.findAll({
-    where: {
-      user_id: req.session.user_id,
-    },
-    attributes: ["brand", "price", "comment", "user_id"],
-    include: [
-      {
-        model: User,
-        attributes: ["username"],
-      },
-    ],
-  })
-    .then((dbTvData) => {
-      const tvs = dbTvData.map((tv) => tv.get({ plain: true }));
-      res.render("TVdump", { tvs, loggedIn: true });
-    })
-    .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
